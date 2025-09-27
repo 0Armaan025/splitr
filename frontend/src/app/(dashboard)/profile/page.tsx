@@ -1,8 +1,15 @@
+'use client';
 import { InformationSection } from '@/components/information-section/informationsection';
 import { BellIcon, SearchIcon } from 'lucide-react';
-import React from 'react';
+import React, { useState } from 'react';
+
+type Sections = "Profile Settings" | "Password" | "Notifications" | "Verification";
 
 const ProfilePage = () => {
+
+
+    const [selectedSection, setSelectedSection] = useState<Sections>("Profile Settings");
+
     return (
         <div className="profilePage flex flex-col justify-start items-start p-4 sm:p-6 md:p-8 lg:p-10">
 
@@ -28,7 +35,7 @@ const ProfilePage = () => {
                     {/* Left Sidebar */}
                     <div className="flex flex-col w-full md:w-60 bg-white/30 rounded-xl py-4">
                         {["Profile Settings", "Password", "Notifications", "Verification"].map((item) => (
-                            <span key={item} className="text-black text-lg sm:text-xl px-4 py-2 my-1 w-full hover:cursor-pointer hover:bg-white/80 transition-all">{item}</span>
+                            <span key={item} className={`text-black text-lg sm:text-xl px-4 py-2 my-1 w-full hover:cursor-pointer hover:bg-white/80 transition-all ${selectedSection === item ? 'bg-white/60' : ''}`}>{item}</span>
                         ))}
                     </div>
 

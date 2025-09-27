@@ -1,4 +1,4 @@
-import { FolderKanban, LayoutDashboard, LayoutDashboardIcon, User } from "lucide-react";
+import { BellIcon, FolderKanban, LayoutDashboard, LayoutDashboardIcon, User } from "lucide-react";
 // let's have the list of navbar items here
 
 export const NAV_ITEMS = [
@@ -18,6 +18,8 @@ export interface TooltipProps {
 export const LEFT_SIDE_BAR_ITEMS = [
     {title: "Dashboard", icon: LayoutDashboard, link: "/dashboard"},
     {title: "Profile", icon: User, link: "/profile"},
+    {title: "Campaigns", icon: FolderKanban, link: "/campaigns"},
+    {title: "Notifications", icon: BellIcon, link: "/notifications"},
 ]
 
 export const DUMMY_LEADERBOARD_DATA = [

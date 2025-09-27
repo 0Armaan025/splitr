@@ -1,10 +1,10 @@
 export const CampaignCard = () => {
   return (
-    <div className="campaign-card p-4 sm:p-6  max-w-lg mx-auto lg:mx-0
+    <div className="campaign-card p-4 sm:p-6   mx-auto lg:mx-0
     hover:cursor-pointer
     hover:scale-105
     transition-all duration-300
-    flex flex-col justify-between bg-white/20 backdrop-blur-2xl rounded-2xl shadow-sm shadow-black h-[12rem] w-[40rem] sm:h-[18rem]">
+    flex flex-col justify-between bg-white/20 backdrop-blur-2xl rounded-2xl shadow-sm shadow-black h-[18rem] sm:w-[20rem] lg:w-[20rem] md:h-[18rem] lg:h-[14rem]">
 
       <div className="flex flex-row justify-between w-full items-start">
         <h3 className="text-lg sm:text-xl font-semibold text-gray-800">Campaign Title</h3>

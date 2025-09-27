@@ -13,7 +13,7 @@ const poppinsFont = Poppins({
 
 const DashboardPage = () => {
   return (
-    <div className="dashboard ml-4">
+    <div className="dashboard ml-12 overflow-x-hidden">
       {/* spacer */}
 
       <div className="spacer mt-4"></div>
@@ -38,7 +38,7 @@ const DashboardPage = () => {
      {/* grid here for kind of respnosive ness wiht 2 cols and 2 rows and just a flex col for small screens */}
      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 mt-4">
         {/* Campaign Card */}
-        <div className="lg:col-span-1 ml-2">
+        <div className=" ">
           <CampaignCard/>
         </div>
         
